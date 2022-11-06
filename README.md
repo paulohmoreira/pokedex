@@ -24,7 +24,7 @@ Vou utilizar o design que está no site [Dribbble](https://dribbble.com/shots/65
 
 - [ ] Estilização da página de listagem
  - [x] Estilização inicial
- - [ ] Estilização da listagem de Pokémon
+ - [x] Estilização da listagem de Pokémon
  - [ ] Adicionando a imagem do Pokémon
  - [ ] Adicionando os tipos dos Pokémon
  - [ ] Finalizando layout da imagem
