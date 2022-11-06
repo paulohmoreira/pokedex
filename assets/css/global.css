@@ -8,13 +8,46 @@
   font-family: 'Roboto', sans-serif;
 }
 
+body {
+  background-color: #f6f8fc;
+}
+
 .content {
   padding: 1rem;
+  width: 100vw;
+  height: 100vh;
+  background-color: #FFF;
+}
+
+@media screen and (min-width: 991.9px) {
+  .content {
+    max-width: 991.9px;
+    height: auto;
+    margin: 1rem auto;
+  }
 }
 
 ol.pokemon-list { 
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 374.9px) {
+  ol.pokemon-list { 
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 575.9px) {
+  ol.pokemon-list { 
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 991.9px) {
+  ol.pokemon-list { 
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .pokemon {

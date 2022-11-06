@@ -28,10 +28,9 @@ Vou utilizar o design que está no site [Dribbble](https://dribbble.com/shots/65
   - [x] Adicionando a imagem do Pokémon
   - [x] Adicionando os tipos dos Pokémon e finalizando layout da imagem
   - [x] Melhorando estilização dos pokemon do tipo fogo
-  - [ ] Adicionando botão de filtro
-  - [ ] Finalizando layout do botão
-  - [ ] Tornando layout responsivo
+  - [x] Tornando layout responsivo
   - [ ] Separando os estilos
+
 
 - [ ] Integrando com a Poke API
   - [ ] Fazer requisição para pegar lista de pokémon
@@ -52,3 +51,8 @@ Vou utilizar o design que está no site [Dribbble](https://dribbble.com/shots/65
   Segunda fase do projeto
   <br>
 </h1>
+
+- [ ] Adicionando botão de filtro
+- [ ] Finalizando layout do botão
+
+
