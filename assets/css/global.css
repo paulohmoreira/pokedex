@@ -28,6 +28,11 @@ ol.pokemon-list {
   /* height: 120px; */
 }
 
+.pokemon:nth-child(n + 4) {
+  background-color: #fc6c6d;
+
+}
+
 .pokemon .number {
   color: #000;
   opacity: .3;
@@ -52,6 +57,10 @@ li.type {
   font-size: .625rem;
   margin: .25rem 0;
   border-radius: 1rem;
+}
+
+.pokemon:nth-child(n + 4) li.type {
+  background-color: #f78d8c;
 }
 
 .pokemon .detail img {
