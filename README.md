@@ -17,10 +17,13 @@ Vou utilizar o design que está no site [Dribbble](https://dribbble.com/shots/65
 
 # Funcionalidades
 
-<h1 align="center"> Primeira fase do projeto</h1>
+<h2 align="center"> 
+  <br>
+  Primeira fase do projeto
+</h2>
 
 - [ ] Estilização da página de listagem
- - [ ] Estilização inicial
+ - [x] Estilização inicial
  - [ ] Estilização da listagem de Pokémon
  - [ ] Adicionando a imagem do Pokémon
  - [ ] Adicionando os tipos dos Pokémon
@@ -45,7 +48,7 @@ Vou utilizar o design que está no site [Dribbble](https://dribbble.com/shots/65
 
   ---
 <h1 align="center">
-<br> 
-Segunda fase do projeto
-<br>
+  <br> 
+  Segunda fase do projeto
+  <br>
 </h1>
