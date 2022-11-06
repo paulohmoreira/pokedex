@@ -29,7 +29,7 @@ Vou utilizar o design que está no site [Dribbble](https://dribbble.com/shots/65
   - [x] Adicionando os tipos dos Pokémon e finalizando layout da imagem
   - [x] Melhorando estilização dos pokemon do tipo fogo
   - [x] Tornando layout responsivo
-  - [ ] Separando os estilos
+  - [x] Separando e organizando os estilos
 
 
 - [ ] Integrando com a Poke API
