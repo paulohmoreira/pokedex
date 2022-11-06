@@ -23,15 +23,15 @@ Vou utilizar o design que está no site [Dribbble](https://dribbble.com/shots/65
 </h2>
 
 - [ ] Estilização da página de listagem
- - [x] Estilização inicial
- - [x] Estilização da listagem de Pokémon
- - [ ] Adicionando a imagem do Pokémon
- - [ ] Adicionando os tipos dos Pokémon
- - [ ] Finalizando layout da imagem
- - [ ] Adicionando botão de filtro
- - [ ] Finalizando layout do botão
- - [ ] Tornando layout responsivo
- - [ ] Separando os estilos
+  - [x] Estilização inicial
+  - [x] Estilização da listagem de Pokémon
+  - [x] Adicionando a imagem do Pokémon
+  - [ ] Adicionando os tipos dos Pokémon
+  - [ ] Finalizando layout da imagem
+  - [ ] Adicionando botão de filtro
+  - [ ] Finalizando layout do botão
+  - [ ] Tornando layout responsivo
+  - [ ] Separando os estilos
 
 - [ ] Integrando com a Poke API
   - [ ] Fazer requisição para pegar lista de pokémon
