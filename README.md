@@ -35,7 +35,7 @@ Vou utilizar o design que está no site [Dribbble](https://dribbble.com/shots/65
 - [ ] Integrando com a Poke API
   - [x] Fazer requisição para pegar lista de pokémon
   - [x] Transformando a lista da API (JSON) em HTML
-  - [ ] Pegar nome do Pokemon e listar dinamicamente
+  - [x] Pegar nome do Pokemon e listar dinamicamente
   - [ ] Separar consumo da API da manipulação de HTML
   - [ ] Finalizando a listagem de pokémon
   - [ ] Fazer requisição para pegar os detalhes dos pokémon
