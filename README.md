@@ -22,7 +22,7 @@ Vou utilizar o design que está no site [Dribbble](https://dribbble.com/shots/65
   Primeira fase do projeto
 </h2>
 
-- [ ] Estilização da página de listagem
+- [x] Estilização da página de listagem
   - [x] Estilização inicial
   - [x] Estilização da listagem de Pokémon
   - [x] Adicionando a imagem do Pokémon
@@ -33,7 +33,7 @@ Vou utilizar o design que está no site [Dribbble](https://dribbble.com/shots/65
 
 
 - [ ] Integrando com a Poke API
-  - [ ] Fazer requisição para pegar lista de pokémon
+  - [x] Fazer requisição para pegar lista de pokémon
   - [ ] Transformando a lista da API (JSON) em HTML
   - [ ] Separar consumo da API da manipulação de HTML
   - [ ] Finalizando a listagem de pokémon
