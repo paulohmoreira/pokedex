@@ -1,20 +1,12 @@
-// Váriáveis para controle de paginação
-const offset = 0;
-const limit = 10;
-
-// Endpoint da API
-const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`;
-
 const pokemonList = document.getElementById("pokemonList");
 
 // Pegando a lista de pokemons (nome e url)
-pokeApi.getPokemons().then((pokemons) => {
-    for (let i = 0; i < pokemons.length; i++) {
-      const pokemon = pokemons[i];
-      pokemonList.innerHTML += convertPokemonToLi(pokemon);
-    }
-  })
-  .catch((error) => console.error(error))
+pokeApi.getPokemons().then((pokemons = []) => {
+  // Percorrendo a lista e retornando outra convertida para html
+  // E também transformando o array em uma só váriavel com o join para concatenar o html e renderizar de uma vez no DOM
+  pokemonList.innerHTML += pokemons.map(convertPokemonToLi).join('');
+})
+.catch((error) => console.error(error))
 
 
 // Convertendo a lista de pokemon em json para html
