@@ -3,7 +3,7 @@
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 # Pokedex
-Objetivo deste projeto é criar uma Pokedex totalmente responsiva, com paginação, filtro por tipo de pokemon e conectada à [Poke API](https://pokeapi.co/), consolidando meus estudos com API's RESTful
+Objetivo deste projeto é criar uma Pokedex totalmente responsiva, com paginação, filtro por tipo de pokemon, conectada à [Poke API](https://pokeapi.co/) e com boas práticas para reduzir a verbosidade do código, consolidando meus estudos com API's RESTful
 
 # Design Preview
 
@@ -36,7 +36,8 @@ Vou utilizar o design que está no site [Dribbble](https://dribbble.com/shots/65
   - [x] Fazer requisição para pegar lista de pokémon
   - [x] Transformando a lista da API (JSON) em HTML
   - [x] Pegar nome do Pokemon e listar dinamicamente
-  - [ ] Separar consumo da API da manipulação de HTML
+  - [x] Separar consumo da API da manipulação de HTML
+  - [ ] Melhorando código com melhores práticas
   - [ ] Finalizando a listagem de pokémon
   - [ ] Fazer requisição para pegar os detalhes dos pokémon
   - [ ] Converter o modelo JSON da PokeAPi para o que será usado na aplicação

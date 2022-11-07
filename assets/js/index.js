@@ -8,10 +8,7 @@ const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`;
 const pokemonList = document.getElementById("pokemonList");
 
 // Pegando a lista de pokemons (nome e url)
-fetch(url)
-  .then((response) => response.json())
-  .then((responseJson) => responseJson.results)
-  .then((pokemons) => {
+pokeApi.getPokemons().then((pokemons) => {
     for (let i = 0; i < pokemons.length; i++) {
       const pokemon = pokemons[i];
       pokemonList.innerHTML += convertPokemonToLi(pokemon);
