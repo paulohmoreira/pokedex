@@ -14,10 +14,10 @@ ol.pokemon-list {
   /* height: 120px; */
 }
 
-.pokemon:nth-child(n + 4) {
+/* .pokemon:nth-child(n + 4) {
   background-color: #fc6c6d;
 
-}
+} */
 
 .pokemon .number {
   color: #000;
@@ -45,9 +45,9 @@ li.type {
   border-radius: 1rem;
 }
 
-.pokemon:nth-child(n + 4) li.type {
+/* .pokemon:nth-child(n + 4) li.type {
   background-color: #f78d8c;
-}
+} */
 
 .pokemon .detail img {
   max-width: 100%;
