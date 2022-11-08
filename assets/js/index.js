@@ -4,7 +4,8 @@ const pokemonList = document.getElementById("pokemonList");
 pokeApi.getPokemons().then((pokemons = []) => {
   // Percorrendo a lista e retornando outra convertida para html
   // E também transformando o array em uma só váriavel com o join para concatenar o html e renderizar de uma vez no DOM
-  pokemonList.innerHTML += pokemons.map(convertPokemonToLi).join('');
+  const newHtml = pokemons.map(convertPokemonToLi).join('');
+  pokemonList.innerHTML = newHtml;
 })
 .catch((error) => console.error(error))
 
