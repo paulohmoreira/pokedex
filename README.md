@@ -39,6 +39,8 @@ Vou utilizar o design que está no site [Dribbble](https://dribbble.com/shots/65
   - [x] Separar consumo da API da manipulação de HTML
   - [x] Refatorando código com melhores práticas
   - [x] Fazer requisição para pegar os detalhes dos pokémon
+  - [x] Pegar lista de tipos e adicionar dinamicamente
+  - [ ] Pegar imagem e adicionar dinamicamente
   - [ ] Converter o modelo JSON da PokeAPi para o que será usado na aplicação
   - [ ] Adicionando tipos dinamicamente
   - [ ] Adicinando botão de paginação
