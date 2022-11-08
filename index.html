@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/global.css">
   <link rel="stylesheet" href="assets/css/pokedex.css">
+  <!-- Script com os modelos pokemon refatorados -->
+  <script src="assets/js/pokemon-model.js" defer></script>
   <!-- Script que faz as requisições à API -->
   <script src="assets/js/poke-api.js" defer></script>
   <!-- Script para manipular os dados pegos na API -->
@@ -19,19 +21,6 @@
     <h1>Pokedex</h1>
 
     <ol id="pokemonList" class="pokemon-list">
-
-      <li class="pokemon">
-        <span class="number">#001</span>
-        <span class="name">Bulbasaur</span>
-        <div class="detail">
-          <ol class="types">
-            <li class="type">grass</li>
-            <li class="type">poison</li>
-          </ol>
-          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="Bulbasaur">
-        </div>
-      </li>
-
       <!-- Aqui vai todos os pokemon pegos na API -->
 
     </ol>

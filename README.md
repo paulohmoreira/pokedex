@@ -41,8 +41,8 @@ Vou utilizar o design que está no site [Dribbble](https://dribbble.com/shots/65
   - [x] Fazer requisição para pegar os detalhes dos pokémon
   - [x] Pegar lista de tipos e adicionar dinamicamente
   - [x] Pegar imagem e adicionar dinamicamente
-  - [ ] Converter o modelo JSON da PokeAPi para o que será usado na aplicação
-  - [ ] Adicionando tipos dinamicamente
+  - [x] Converter o modelo JSON da PokeAPi para o que será usado na aplicação
+  - [ ] Adicionando cor dos tipos dinamicamente
   - [ ] Adicinando botão de paginação
   - [ ] Criando mecanismo de paginação
   - [ ] Criando mecanismo para limitar a listagem na primeira geração de pokémon
