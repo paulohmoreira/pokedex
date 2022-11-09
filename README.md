@@ -45,7 +45,7 @@ Vou utilizar o design que está no site [Dribbble](https://dribbble.com/shots/65
   - [x] Adicionando cor dos tipos dinamicamente
   - [x] Adicinando botão de paginação
   - [x] Criando mecanismo de paginação
-  - [ ] Criando mecanismo para limitar a listagem na primeira geração de pokémon
+  - [x] Criando mecanismo para limitar a listagem na primeira geração de pokémon
   - [ ] Finalizando a listagem de pokémon
 
 

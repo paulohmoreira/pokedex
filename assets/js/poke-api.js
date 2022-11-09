@@ -25,7 +25,7 @@ pokeApi.getPokemons = (offset = 0, limit = 9) => {
 // Convertendo resultado da requisição de detalhes para o pokemon-model
 function convertPokeApiToPokemon(pokeDetail) {
   const pokemon = new Pokemon();
-  pokemon.number = pokeDetail.order;
+  pokemon.number = pokeDetail.id;
   pokemon.name = pokeDetail.name;
   const types = pokeDetail.types.map((typeSlot) => typeSlot.type.name);
   // Pegando tipo principal, [type] é o nome da váriavel que vai receber o primeiro item do array types

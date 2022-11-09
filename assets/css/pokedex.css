@@ -137,6 +137,7 @@ li.type {
   background-color: #6c79db;
   border: none;
   border-radius: 1rem;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 374.9px) {

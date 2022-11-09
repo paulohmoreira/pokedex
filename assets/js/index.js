@@ -1,8 +1,11 @@
 const pokemonList = document.getElementById("pokemonList");
 const loadMoreButton = document.getElementById("load-more-button");
 
+// Controle da paginação
 let offset = 0;
-const limit = 5;
+const limit = 10;
+// Limitando na quantidade de pokemon da primeira geração
+const maxPokemon = 151;
 
 function loadPokemonItens(offset, limit) {
   // Pegando a lista de pokemons (nome e url)
@@ -34,8 +37,19 @@ function convertPokemonToLi(pokemon) {
 
 // Evento do botão de paginação
 loadMoreButton.addEventListener("click", () => {
+  // Controlando paginação
   offset += limit;
-  loadPokemonItens(offset, limit);
+  const qtdRecordNextPage = offset + limit;
+  
+  if (qtdRecordNextPage >= maxPokemon) {
+    const newLimit = maxPokemon - offset;
+    loadPokemonItens(offset, newLimit);
+    
+    //Removendo botão
+    loadMoreButton.parentElement.removeChild(loadMoreButton);
+  } else {
+    loadPokemonItens(offset, limit);
+  }
 })
 
 // Inicializando a função para carregar os pokemons assim que abrir a aplicação
