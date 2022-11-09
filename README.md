@@ -43,7 +43,7 @@ Vou utilizar o design que está no site [Dribbble](https://dribbble.com/shots/65
   - [x] Pegar imagem e adicionar dinamicamente
   - [x] Converter o modelo JSON da PokeAPi para o que será usado na aplicação
   - [x] Adicionando cor dos tipos dinamicamente
-  - [ ] Adicinando botão de paginação
+  - [x] Adicinando botão de paginação
   - [ ] Criando mecanismo de paginação
   - [ ] Criando mecanismo para limitar a listagem na primeira geração de pokémon
   - [ ] Finalizando a listagem de pokémon
