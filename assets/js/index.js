@@ -1,13 +1,19 @@
 const pokemonList = document.getElementById("pokemonList");
+const loadMoreButton = document.getElementById("load-more-button");
 
-// Pegando a lista de pokemons (nome e url)
-pokeApi.getPokemons().then((pokemons = []) => {
-  // Percorrendo a lista e retornando outra convertida para html
-  // E também transformando o array em uma só váriavel com o join para concatenar o html e renderizar de uma vez no DOM
-  const newHtml = pokemons.map(convertPokemonToLi).join('');
-  pokemonList.innerHTML = newHtml;
-})
-.catch((error) => console.error(error))
+let offset = 0;
+const limit = 5;
+
+function loadPokemonItens(offset, limit) {
+  // Pegando a lista de pokemons (nome e url)
+  pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
+    // Percorrendo a lista e retornando outra convertida para html
+    // E também transformando o array em uma só váriavel com o join para concatenar o html e renderizar de uma vez no DOM
+    const newHtml = pokemons.map(convertPokemonToLi).join('');
+    pokemonList.innerHTML += newHtml;
+  })
+  .catch((error) => console.error(error))
+}
 
 
 // Convertendo a lista de pokemon em json para html
@@ -25,3 +31,12 @@ function convertPokemonToLi(pokemon) {
   </li>
   `
 }
+
+// Evento do botão de paginação
+loadMoreButton.addEventListener("click", () => {
+  offset += limit;
+  loadPokemonItens(offset, limit);
+})
+
+// Inicializando a função para carregar os pokemons assim que abrir a aplicação
+loadPokemonItens(offset, limit);
