@@ -61,11 +61,10 @@ Vou utilizar o design que está no site [Dribbble](https://dribbble.com/shots/65
 - [x] Posicionar foto do pokemon dentro do header, embaixo e centralizada
 - [x] Criar evento de abrir modal
 - [x] Criar evento de fechar o modal
-- [x] Criar seção de detalhes com menu 'About', 'Base Stats' e 'Evolution'
-- [ ] Criar lista de detalhes do About
+- [x] Criar seção de detalhes com menu 'About'
+- [x] Criar lista de detalhes do About
 - [ ] Criar lista do Base Stats
 - [ ] Mostrar os Stats como uma barra de progressão
-- [ ] Criar lista de Evolutions
 - [ ] Criar animação de abrir e fechar modal
 - [ ] Ajustar layout para ficar o mais próximo possível de proposto
 - [ ] Pegar todos os dados do pokemon dinamicamente
