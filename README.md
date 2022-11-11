@@ -56,8 +56,8 @@ Vou utilizar o design que está no site [Dribbble](https://dribbble.com/shots/65
 </h2>
 
 - [x] Criar página ou modal para renderizar o pokemon selecionado com os detalhes
-- [ ] Criar o header com nome, número e tipos
-- [ ] Posicionar foto do pokemon abaixo do header e centralizada
+- [x] Criar o header com nome, número, imagem, tipos e botão voltar
+- [ ] Posicionar foto do pokemon dentro do header, embaixo e centralizada
 - [ ] Criar seção de detalhes com menu 'About', 'Base Stats' e 'Evolution'
 - [ ] Criar lista de detalhes do About
 - [ ] Criar lista do Base Stats
