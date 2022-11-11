@@ -55,7 +55,7 @@ Vou utilizar o design que está no site [Dribbble](https://dribbble.com/shots/65
   <br>
 </h2>
 
-- [ ] Criar página ou modal para renderizar o pokemon selecionado com os detalhes
+- [x] Criar página ou modal para renderizar o pokemon selecionado com os detalhes
 - [ ] Criar o header com nome, número e tipos
 - [ ] Posicionar foto do pokemon abaixo do header e centralizada
 - [ ] Criar seção de detalhes com menu 'About', 'Base Stats' e 'Evolution'
@@ -64,6 +64,7 @@ Vou utilizar o design que está no site [Dribbble](https://dribbble.com/shots/65
 - [ ] Mostrar os Stats como uma barra de progressão
 - [ ] Criar lista de Evolutions
 - [ ] Ajustar layout para ficar o mais próximo possível de proposto
+- [ ] Pegar todos os dados do pokemon dinamicamente
 
 
 ### Funcionalidades extras
