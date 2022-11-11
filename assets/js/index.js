@@ -61,7 +61,6 @@ document.addEventListener('click', function(e) {
       e.target.id == "span-name" || 
       e.target.id == "span-number"  ||
       e.target.id == "div-detail") {
-    console.log("teste")
     openModal()
   }
 })
@@ -70,4 +69,10 @@ document.addEventListener('click', function(e) {
 function openModal() {
   const modal = document.getElementById("modal");
   modal.classList.add("show-modal"); 
+
+  const btn = document.getElementById("back-button");
+  btn.addEventListener("click", () => { 
+    console.log("oi")
+    modal.classList.remove("show-modal");
+  })
 }
