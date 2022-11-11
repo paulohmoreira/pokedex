@@ -18,18 +18,17 @@ function loadPokemonItens(offset, limit) {
   .catch((error) => console.error(error))
 }
 
-
 // Convertendo a lista de pokemon em json para html
 function convertPokemonToLi(pokemon) {
   return `
-  <li class="pokemon ${pokemon.type}">
-    <span class="number">#${pokemon.number}</span>
-    <span class="name">${pokemon.name}</span>
-    <div class="detail">
+  <li class="pokemon ${pokemon.type}" id="pokemon-list">
+    <span class="number" id="span-number">#${pokemon.number}</span>
+    <span class="name" id="span-name">${pokemon.name}</span>
+    <div class="detail" id="div-detail">
       <ol class="types">
       ${pokemon.types.map((type) => `<li class="type ${pokemon.type}">${type}</li>`).join("")}
       </ol>
-      <img src="${pokemon.photo}" alt="${pokemon.name}">
+      <img src="${pokemon.photo}" alt="${pokemon.name}" id="pokemon-img">
     </div>
   </li>
   `
@@ -54,3 +53,21 @@ loadMoreButton.addEventListener("click", () => {
 
 // Inicializando a função para carregar os pokemons assim que abrir a aplicação
 loadPokemonItens(offset, limit);
+
+// Evento que chama a função openModal
+document.addEventListener('click', function(e) {
+  if (e.target.tagName === "LI" || 
+      e.target.id == "pokemon-img" || 
+      e.target.id == "span-name" || 
+      e.target.id == "span-number"  ||
+      e.target.id == "div-detail") {
+    console.log("teste")
+    openModal()
+  }
+})
+
+// Função de abrir modal
+function openModal() {
+  const modal = document.getElementById("modal");
+  modal.classList.add("show-modal"); 
+}

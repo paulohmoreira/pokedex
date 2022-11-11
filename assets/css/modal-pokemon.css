@@ -1,4 +1,9 @@
+.modal-container.show-modal {
+  display: block;
+}
+
 .modal-container {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
