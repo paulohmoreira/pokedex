@@ -32,7 +32,7 @@ Vou utilizar o design que está no site [Dribbble](https://dribbble.com/shots/65
   - [x] Separando e organizando os estilos
 
 
-- [ ] Integrando com a Poke API
+- [x] Integrando com a Poke API
   - [x] Fazer requisição para pegar lista de pokémon
   - [x] Transformando a lista da API (JSON) em HTML
   - [x] Pegar nome do Pokemon e listar dinamicamente
@@ -46,17 +46,31 @@ Vou utilizar o design que está no site [Dribbble](https://dribbble.com/shots/65
   - [x] Adicinando botão de paginação
   - [x] Criando mecanismo de paginação
   - [x] Criando mecanismo para limitar a listagem na primeira geração de pokémon
-  - [ ] Finalizando a listagem de pokémon
 
 
-  ---
-<h1 align="center">
+
+<h2 align="center">
   <br> 
   Segunda fase do projeto
   <br>
-</h1>
+</h2>
 
-- [ ] Adicionando botão de filtro
-- [ ] Finalizando layout do botão
+- [ ] Criar página ou modal para renderizar o pokemon selecionado com os detalhes
+- [ ] Criar o header com nome, número e tipos
+- [ ] Posicionar foto do pokemon abaixo do header e centralizada
+- [ ] Criar seção de detalhes com menu 'About', 'Base Stats' e 'Evolution'
+- [ ] Criar lista de detalhes do About
+- [ ] Criar lista do Base Stats
+- [ ] Mostrar os Stats como uma barra de progressão
+- [ ] Criar lista de Evolutions
+- [ ] Ajustar layout para ficar o mais próximo possível de proposto
+
+
+### Funcionalidades extras
+- [ ] Finalizando a listagem de pokémon
+  - [ ] Adicionando funcionalidade filtro pokemon por tipo
+  - [ ] Criar layout para a funcionalidade (botão ou menu)
+  - [ ] Criar a lógica para o filtro
+
 
 
