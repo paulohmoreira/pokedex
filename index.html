@@ -33,7 +33,7 @@
     </div>
   </section>
 
-  <div class="modal-container" id="modal">
+  <div class="modal-container show-modal" id="modal">
     <div class="modal-pokemon">
       <div class="topo">
         <div class="modal-header">
@@ -49,6 +49,36 @@
       </div>
       <div class="bottom">
         <div class="modal-body">
+          <div class="nav-tab">
+           <!-- Cria o Menu -->
+          <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'first')" id="defaultOpen">About</button>
+            <button class="tablinks" onclick="openTab(event, 'second')">Base Stats</button>
+            <button class="tablinks" onclick="openTab(event, 'third')">Evolution</button>
+            <button class="tablinks" onclick="openTab(event, 'fourth')">Moves</button>
+          </div>
+
+          <!-- Conteúdo da Primeira Aba -->
+          <div id="first" class="tabcontent">
+            <h3>First Tab</h3>
+            <p>Conteúdo da primeira aba...</p> 
+          </div>
+          <!-- Conteúdo da Segunda Aba -->
+          <div id="second" class="tabcontent">
+            <h3>Second Tab</h3>
+            <p>Conteúdo da segunda aba...</p> 
+          </div>
+          <!-- Conteúdo da Terceira Aba -->
+          <div id="third" class="tabcontent">
+            <h3>Third Tab</h3>
+            <p>Conteúdo da terceira aba...</p>
+          </div>
+          <!-- Conteúdo da Terceira Aba -->
+          <div id="fourth" class="tabcontent">
+            <h3>Fourth Tab</h3>
+            <p>Conteúdo da quarta aba...</p>
+          </div>
+          </div>
           
         </div>
       </div>

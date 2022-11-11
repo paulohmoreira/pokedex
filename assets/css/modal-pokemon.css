@@ -14,11 +14,11 @@
 }
 
 .modal-pokemon .topo {
-  height: 40vh;
+  height: 300px;
 }
 
 .modal-pokemon .bottom {
-  height: 60vh;
+  height: 900px;
   background-color: #FFF;
   border-radius: 3rem 3rem 0 0;
 }
@@ -61,7 +61,50 @@
 }
 
 .modal-header img {
-  margin-top: 3rem;
-  max-width: 200px;
+  margin-top: 1rem;
+  max-width: 180px;
   align-self: center;
+}
+
+/* Style da aba (tab) */
+.tab {
+  overflow: hidden;
+  padding-top: 3rem;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  margin: auto;
+}
+
+/* Style dos botões dentro da aba */
+.tab button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: .875rem;
+  font-weight: 500;
+  color: #CCC;
+  background-color: #FFF;
+  padding-bottom: 1rem;
+}
+
+/* Muda a cor do fundo do botão on hover */
+.tab button:hover {
+  color: #000;
+}
+
+/* Cria estilo da aba ativa/atual - tabalinks class */
+.tab button.active {
+  color: #000;
+  border-bottom: 2px solid #6f38f6;
+}
+
+/* Estilo do conteúdo de cada aba */
+.tabcontent {
+  display: none;
+  width: 90vw;
+  margin: auto;
+  padding: 2rem 0;
 }
