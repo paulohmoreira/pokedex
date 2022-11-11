@@ -33,8 +33,9 @@
     </div>
   </section>
 
-  <div class="modal-container" id="modal">
+  <div class="modal-container show-modal" id="modal">
     <div class="modal-pokemon">
+
       <div class="topo">
         <div class="modal-header">
           <button id="back-button"><i class="fa-solid fa-arrow-left-long"></i></button>
@@ -47,8 +48,10 @@
           <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="Bulbasaur">
         </div>
       </div>
+
       <div class="bottom">
         <div class="modal-body">
+
           <div class="nav-tab">
            <!-- Cria o Menu -->
             <div class="tab">
@@ -74,8 +77,35 @@
             </div>
             <!-- Conteúdo da Segunda Aba -->
             <div id="second" class="tabcontent">
-              <h3>Second Tab</h3>
-              <p>Conteúdo da segunda aba...</p> 
+              <div class="stats-container">
+                <div class="stats">
+                  <span>HP</span>
+                  <span>Attack</span>
+                  <span>Defense</span>
+                  <span>Sp. Atk</span>
+                  <span>Sp. Def</span>
+                  <span>Speed</span>
+                  <span>Total</span>
+                </div>
+                <div class="number-stats">
+                  <p>45</p>
+                  <p>60</p>
+                  <p>48</p>
+                  <p>65</p>
+                  <p>65</p>
+                  <p>45</p>
+                  <p>317</p>
+                </div>
+                <div class="progress">
+                  <progress min="0" max="100" value="45"></progress>
+                  <progress min="0" max="100" value="60"></progress>
+                  <progress min="0" max="100" value="48"></progress>
+                  <progress min="0" max="100" value="65"></progress>
+                  <progress min="0" max="100" value="65"></progress>
+                  <progress min="0" max="100" value="45"></progress>
+                  <progress min="0" max="600" value="317"></progress>
+                </div>
+              </div>
             </div>
           </div>
           
