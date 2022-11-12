@@ -166,21 +166,20 @@ td.number-stats {
 }
 
 td.progress {
-  width: 120px;
+  width: 150px;
 }
 
-.progress-bar {
-  --progress: 10;
-  height: 5px;
-  /* padding: 5px; */
-  background-color: #ccc;
-  display: flex;
+progress {
+  width: 100%;
+  -webkit-appearance: none;
+}
+
+::-webkit-progress-bar {
+  background-color: rgba(233, 229, 229, 0.918);
   border-radius: 10px;
 }
 
-.progress-bar::before{
-  content: "";
-  width: calc(var(--progress) * 1%);
-  background-color: hsl( calc(var(--progress) * 1.2) , 80%, 50%);
+::-webkit-progress-value {
   border-radius: 10px;
+  background-color: #77c850;
 }
