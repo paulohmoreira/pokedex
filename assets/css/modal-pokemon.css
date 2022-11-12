@@ -183,3 +183,18 @@ progress {
   border-radius: 10px;
   background-color: #77c850;
 }
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(-100px, -100px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.modal-container.show-modal  {
+    animation: modal .3s;
+}

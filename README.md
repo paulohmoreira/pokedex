@@ -65,7 +65,7 @@ Vou utilizar o design que está no site [Dribbble](https://dribbble.com/shots/65
 - [x] Criar lista de detalhes do About
 - [x] Criar lista do Base Stats
 - [x] Mudar cor da barra de progressão
-- [ ] Criar animação de abrir e fechar modal
+- [x] Criar animação de abrir e fechar modal
 - [ ] Pegar todos os dados do pokemon dinamicamente
 - [ ] Ajustar layout para ficar o mais próximo possível de proposto
 
