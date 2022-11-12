@@ -67,8 +67,8 @@ Vou utilizar o design que está no site [Dribbble](https://dribbble.com/shots/65
 - [x] Mudar cor da barra de progressão
 - [x] Criar animação de abrir e fechar modal
 - [x] Refatorado forma de abrir modal
-- [ ] Pegar todos os dados do pokemon na API
-- [ ] Renderizar pokemon clicado de for dinamica
+- [x] Pegar todos os dados do pokemon na API
+- [x] Renderizar pokemon clicado de for dinamica
 - [ ] Ajustar layout para ficar o mais próximo possível de proposto
 
 

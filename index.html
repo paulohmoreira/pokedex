@@ -35,20 +35,10 @@
 
   <div class="modal-container" id="modal">
     <div class="modal-pokemon">
-
-      <div class="topo">
-        <div class="modal-header">
-          <button id="back-button"><i class="fa-solid fa-arrow-left-long"></i></button>
-          <h2>Bulbasaur</h2>
-          <span>#001</span>
-          <ol class="types">
-            <li class="type grass">Grass</li>
-            <li class="type grass">Poison</li>
-          </ol>
-          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="Bulbasaur">
-        </div>
+      <button id="back-button"><i class="fa-solid fa-arrow-left-long"></i></button>
+      <div class="topo" id="topo">
+        <!-- Aqui vai o header -->
       </div>
-
       <div class="bottom">
         <div class="modal-body">
 
@@ -60,67 +50,17 @@
             </div>
             <!-- Conteúdo da Primeira Aba -->
             <div id="first" class="tabcontent">
-              <div class="data-container">
-                <div class="left-data">
-                  <span>Species</span>
-                  <span>Height</span>
-                  <span>Weight</span>
-                  <span>Abilities</span>
-                </div>
-                <div class="right-data">
-                  <p>Seed</p>
-                  <p>0.70 cm</p>
-                  <p>6.9 kg</p>
-                  <p>Overgrow, Chlorophyl</p>
-                </div>
+              <div class="data-container" id="data-container">
+                <!-- Aqui vai os detalhes do pokemon -->
               </div>
             </div>
             <!-- Conteúdo da Segunda Aba -->
             <div id="second" class="tabcontent">
-              <div class="stats-container">
-                <table>
-                  <tr>
-                    <td class="stats">HP</td>
-                    <td class="number-stats">45</td>
-                    <td class="progress"><progress min="0" max="100" value="45"></progress></td>
-                  </tr>
-                  <tr>
-                    <td class="stats">Attack</td>
-                    <td class="number-stats">60</td>
-                    <td class="progress"><progress min="0" max="100" value="60"></progress></td>
-                  </tr>
-                  <tr>
-                    <td class="stats">Defense</td>
-                    <td class="number-stats">48</td>
-                    <td class="progress"><progress min="0" max="100" value="48"></progress></td>
-                  </tr>
-                  <tr>
-                    <td class="stats">Sp. Atk</td>
-                    <td class="number-stats">65</td>
-                    <td class="progress"><progress min="0" max="100" value="65"></progress></td>
-                  </tr>
-                  <tr>
-                    <td class="stats">Sp. Def</td>
-                    <td class="number-stats">65</td>
-                    <td class="progress"><progress min="0" max="100" value="65"></progress></td>
-                  </tr>
-                  <tr>
-                    <td class="stats">Speed</td>
-                    <td class="number-stats">45</td>
-                    <td class="progress"><progress min="0" max="100" value="45"></progress></div></td>
-                  </tr>
-                  <tr>
-                    <td class="stats">Total</td>
-                    <td class="number-stats">317</td>
-                    <td class="progress"><progress min="0" max="600" value="317"></progress></td>
-                  </tr>
-                </table>
-                </div>
+              <div class="stats-container" id="stats-container">
+                <!-- Aqui vai os stats       -->
               </div>
             </div>
           </div>
-          
-        </div>
       </div>
     </div>
   </div>

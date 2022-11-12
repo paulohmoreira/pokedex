@@ -30,7 +30,7 @@
   margin: auto;
 }
 
-.modal-header button {
+.modal-pokemon button {
   background-color: transparent;
   border: none;
   align-self: flex-start;
@@ -52,12 +52,13 @@
 }
 
 .modal-header ol {
-  margin-top: -1rem;
+  margin-top: -1.3rem;
 }
 
 .modal-header ol li {
   width: 70px;
   display: inline-block;
+  margin-right: .25rem;
 }
 
 .modal-header img {
@@ -127,24 +128,6 @@
 .tabcontent span {
   display: block;
 }
-
-/* .tabcontent .stats-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.stats span, .number-stats p {
-  font-size: .875rem;
-}
-
-.progress  {
-  width: 180px;
-  min-width: 150px;
-}
-
-.stats-container span, .number-stats p {
-  margin: 1rem 0;
-} */
 
 .stats-container table {
   width: 100%;

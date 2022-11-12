@@ -23,8 +23,8 @@ pokeApi.getPokemons = (offset = 0, limit = 9) => {
 }
 
 // Requisição para pokemon clicado
-pokeApi.getPokemonClicked = (pokemonName) => {
-  const url = `https://pokeapi.co/api/v2/pokemon/${pokemonName}`;
+pokeApi.getPokemonClicked = (id) => {
+  const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
   return fetch(url)
     .then((response) => response.json()) // acessando o pokemon, convertendo lista e retornando os detalhes em JSON
     .then(convertPokeApiToPokemonClicked)
@@ -58,8 +58,10 @@ function convertPokeApiToPokemonClicked(pokeDetail) {
   pokemonClicked.photo = pokeDetail.sprites.other.dream_world.front_default;
   pokemonClicked.height = (pokeDetail.height) * 10;
   pokemonClicked.weight = (pokeDetail.weight) / 10;
-  const abilities = pokeDetail.stats.map((baseStats) => baseStats.base_stat);
+  const abilities = pokeDetail.abilities.map((pokeAbilities) => pokeAbilities.ability.name)
   pokemonClicked.abilities = abilities;
+  const stats = pokeDetail.stats.map((baseStats) => baseStats.base_stat);
+  pokemonClicked.stats = stats;
 
   return pokemonClicked;
 }
