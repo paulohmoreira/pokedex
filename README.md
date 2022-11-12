@@ -64,7 +64,7 @@ Vou utilizar o design que está no site [Dribbble](https://dribbble.com/shots/65
 - [x] Criar seção de detalhes com menu 'About'
 - [x] Criar lista de detalhes do About
 - [x] Criar lista do Base Stats
-- [ ] Mudar cor da barra de progressão
+- [x] Mudar cor da barra de progressão
 - [ ] Criar animação de abrir e fechar modal
 - [ ] Ajustar layout para ficar o mais próximo possível de proposto
 - [ ] Pegar todos os dados do pokemon dinamicamente

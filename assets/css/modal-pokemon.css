@@ -128,21 +128,59 @@
   display: block;
 }
 
-.tabcontent .stats-container {
+/* .tabcontent .stats-container {
   display: flex;
   justify-content: space-between;
 }
 
-.progress progress {
-  display: block;
+.stats span, .number-stats p {
+  font-size: .875rem;
+}
+
+.progress  {
   width: 180px;
   min-width: 150px;
 }
 
 .stats-container span, .number-stats p {
   margin: 1rem 0;
+} */
+
+.stats-container table {
+  width: 100%;
 }
 
-.progress progress {
- margin: 1.1rem 0;
+table tr td {
+  font-size: .875rem;
+  padding: .25rem;
+}
+
+td.stats {
+  width: 40px;
+}
+
+td.number-stats {
+  font-weight: 500;
+  width: 20px;
+  text-align: center;
+}
+
+td.progress {
+  width: 120px;
+}
+
+.progress-bar {
+  --progress: 10;
+  height: 5px;
+  /* padding: 5px; */
+  background-color: #ccc;
+  display: flex;
+  border-radius: 10px;
+}
+
+.progress-bar::before{
+  content: "";
+  width: calc(var(--progress) * 1%);
+  background-color: hsl( calc(var(--progress) * 1.2) , 80%, 50%);
+  border-radius: 10px;
 }

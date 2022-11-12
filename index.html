@@ -55,8 +55,8 @@
           <div class="nav-tab">
            <!-- Cria o Menu -->
             <div class="tab">
-              <button class="tablinks" onclick="openTab(event, 'first')" id="defaultOpen">About</button>
-              <button class="tablinks" onclick="openTab(event, 'second')">Base Stats</button>
+              <button class="tablinks" onclick="openTab(event, 'first')" >About</button>
+              <button class="tablinks" onclick="openTab(event, 'second')" id="defaultOpen">Base Stats</button>
             </div>
             <!-- Conteúdo da Primeira Aba -->
             <div id="first" class="tabcontent">
@@ -78,7 +78,47 @@
             <!-- Conteúdo da Segunda Aba -->
             <div id="second" class="tabcontent">
               <div class="stats-container">
-                <div class="stats">
+                <table>
+                  <tr>
+                    <td class="stats">HP</td>
+                    <td class="number-stats">45</td>
+                    <td class="progress"><div class="progress-bar"></div></td>
+                  </tr>
+                  <tr>
+                    <td class="stats">Attack</td>
+                    <td class="number-stats">60</td>
+                    <td class="progress"><div class="progress-bar"></div></td>
+                  </tr>
+                  <tr>
+                    <td class="stats">Defense</td>
+                    <td class="number-stats">48</td>
+                    <td class="progress"><div class="progress-bar"></div></td>
+                  </tr>
+                  <tr>
+                    <td class="stats">Sp. Atk</td>
+                    <td class="number-stats">65</td>
+                    <td class="progress"><div class="progress-bar"></div></td>
+                  </tr>
+                  <tr>
+                    <td class="stats">Sp. Def</td>
+                    <td class="number-stats">65</td>
+                    <td class="progress"><div class="progress-bar"></div></td>
+                  </tr>
+                  <tr>
+                    <td class="stats">Speed</td>
+                    <td class="number-stats">45</td>
+                    <td class="progress"><div class="progress-bar"></div></td>
+                  </tr>
+                  <tr>
+                    <td class="stats">Total</td>
+                    <td class="number-stats">317</td>
+                    <td><div class="progress-bar"></div></td>
+                  </tr>
+                </table>
+
+
+
+                <!-- <div class="stats">
                   <span>HP</span>
                   <span>Attack</span>
                   <span>Defense</span>
@@ -97,13 +137,20 @@
                   <p>317</p>
                 </div>
                 <div class="progress">
-                  <progress min="0" max="100" value="45"></progress>
+                <progress min="0" max="100" value="45"></progress>
                   <progress min="0" max="100" value="60"></progress>
                   <progress min="0" max="100" value="48"></progress>
                   <progress min="0" max="100" value="65"></progress>
                   <progress min="0" max="100" value="65"></progress>
                   <progress min="0" max="100" value="45"></progress>
                   <progress min="0" max="600" value="317"></progress>
+                  <div class="progress-bar"></div>
+                  <div class="progress-bar"></div>
+                  <div class="progress-bar"></div>
+                  <div class="progress-bar"></div>
+                  <div class="progress-bar"></div>
+                  <div class="progress-bar"></div>
+                  <div class="progress-bar"></div> -->
                 </div>
               </div>
             </div>
