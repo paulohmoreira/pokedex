@@ -3,7 +3,7 @@ const loadMoreButton = document.getElementById("load-more-button");
 
 // Controle da paginação
 let offset = 0;
-const limit = 10;
+const limit = 3;
 // Limitando na quantidade de pokemon da primeira geração
 const maxPokemon = 151;
 
@@ -21,7 +21,7 @@ function loadPokemonItens(offset, limit) {
 // Convertendo a lista de pokemon em json para html
 function convertPokemonToLi(pokemon) {
   return `
-  <li class="pokemon ${pokemon.type}" id="pokemon-list">
+  <li class="pokemon ${pokemon.type}" id="pokemon-list" onclick="getClickedPokemon(${pokemon.number})">
     <span class="number" id="span-number">#${pokemon.number}</span>
     <span class="name" id="span-name">${pokemon.name}</span>
     <div class="detail" id="div-detail">
@@ -55,15 +55,10 @@ loadMoreButton.addEventListener("click", () => {
 loadPokemonItens(offset, limit);
 
 // Evento que chama a função openModal
-document.addEventListener('click', function(e) {
-  if (e.target.tagName === "LI" || 
-      e.target.id == "pokemon-img" || 
-      e.target.id == "span-name" || 
-      e.target.id == "span-number"  ||
-      e.target.id == "div-detail") {
-    openModal()
-  }
-})
+function getClickedPokemon(pokemon) {
+  openModal();
+  console.log(pokemon);
+}
 
 // Função de abrir modal
 function openModal() {

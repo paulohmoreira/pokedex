@@ -4,5 +4,15 @@ class Pokemon {
   type;
   types = [];
   photo;
-  // Na segunda fase do projeto -> Adicionar dados: Species, Height, Weight, Abilities e Base Stats
+  height;
+  weight;
+  abilities = [];
+  stats = [];
+}
+
+class PokemonClicked extends Pokemon {
+  height;
+  weight;
+  abilities = [];
+  stats = [];
 }
