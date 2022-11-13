@@ -3,11 +3,15 @@
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
 # Pokedex
+
 Objetivo deste projeto é criar uma Pokedex totalmente responsiva, com paginação, filtro por tipo de pokemon, conectada à [Poke API](https://pokeapi.co/), manipulando múltiplas requisições em paralelo e com boas práticas para reduzir a verbosidade do código, consolidando meus estudos com API's RESTful
 
-# Design Preview
+## Deploy
+[Link para a demonstração](https://paulohmoreira.github.io/pokedex/)
 
-Vou utilizar o design que está no site [Dribbble](https://dribbble.com/shots/6540871-Pokedex-App) como inspiração na criação da minha pokedex
+## Design Preview
+
+Foi utilizado o design que está no site [Dribbble](https://dribbble.com/shots/6540871-Pokedex-App) como inspiração na criação da minha pokedex
 
 <h1 align="center">
   <br>
@@ -15,12 +19,13 @@ Vou utilizar o design que está no site [Dribbble](https://dribbble.com/shots/65
   <br>
 </h1>
 
-# Funcionalidades
 
-<h2 align="center"> 
-  <br>
-  Primeira fase do projeto
-</h2>
+## Funcionalidades
+
+<br>
+
+### Primeira fase do projeto
+
 
 - [x] Estilização da página de listagem
   - [x] Estilização inicial
@@ -31,6 +36,7 @@ Vou utilizar o design que está no site [Dribbble](https://dribbble.com/shots/65
   - [x] Tornando layout responsivo
   - [x] Separando e organizando os estilos
 
+<br>
 
 - [x] Integrando com a Poke API
   - [x] Fazer requisição para pegar lista de pokémon
@@ -49,11 +55,9 @@ Vou utilizar o design que está no site [Dribbble](https://dribbble.com/shots/65
 
 
 
-<h2 align="center">
+
   <br> 
-  Segunda fase do projeto
-  <br>
-</h2>
+###  Segunda fase do projeto
 
 - [x] Criar página ou modal para renderizar o pokemon selecionado com os detalhes
 - [x] Criar o header com nome, número, imagem, tipos e botão voltar
@@ -71,8 +75,12 @@ Vou utilizar o design que está no site [Dribbble](https://dribbble.com/shots/65
 - [x] Renderizar pokemon clicado de for dinamica
 - [x] Ajustar layout para ficar o mais próximo possível de proposto
 
+<br>
+<br>
 
 ### Funcionalidades extras
+
+Estas funcionalidades serão adicionadas futuramente
 - [ ] Finalizando a listagem de pokémon
   - [ ] Adicionando funcionalidade filtro pokemon por tipo
   - [ ] Criar layout para a funcionalidade (botão ou menu)
