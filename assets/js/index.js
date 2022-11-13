@@ -3,7 +3,7 @@ const loadMoreButton = document.getElementById("load-more-button");
 
 // Controle da paginação
 let offset = 0;
-const limit = 3;
+const limit = 10;
 // Limitando na quantidade de pokemon da primeira geração
 const maxPokemon = 151;
 
@@ -20,6 +20,7 @@ function loadPokemonItens(offset, limit) {
 
 // Função para chamar a requisição do pokemon clicado
 function loadPokemonClicked(id) {
+  const modalPokemon = document.getElementById("modal-pokemon");
   const pokemonHeader = document.getElementById("topo");
   const pokemonAbout = document.getElementById("data-container");
   const pokemonStats = document.getElementById("stats-container");
@@ -32,7 +33,9 @@ function loadPokemonClicked(id) {
     pokemonHeader.innerHTML = newHeader;
     pokemonAbout.innerHTML = newAbout;
     pokemonStats.innerHTML = newStats;
-
+    modalPokemon.className = "";
+    modalPokemon.classList.add("modal-pokemon");
+    modalPokemon.classList.add(pokemons.type);
   })
   .catch((error) => console.error(error))
 }
@@ -158,7 +161,9 @@ function getClickedPokemon(pokemon) {
 // Função de abrir modal
 function openModal() {
   const modal = document.getElementById("modal");
+  const fade = document.getElementById("fade");
   modal.classList.add("show-modal"); 
+  fade.style.display = "block";
   // Ativando botão de voltar (fechar modal)
   closeModal();
 }
@@ -167,6 +172,7 @@ function closeModal() {
   const btn = document.getElementById("back-button");
   btn.addEventListener("click", () => { 
     modal.classList.remove("show-modal");
+    fade.style.display = "none";
   })
 }
 

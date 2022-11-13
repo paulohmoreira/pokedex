@@ -11,7 +11,7 @@ Vou utilizar o design que está no site [Dribbble](https://dribbble.com/shots/65
 
 <h1 align="center">
   <br>
-  <img src="pokedex.png" alt="Demo">
+  <img src="assets/images/pokedex.png" alt="Demo">
   <br>
 </h1>
 
@@ -69,7 +69,7 @@ Vou utilizar o design que está no site [Dribbble](https://dribbble.com/shots/65
 - [x] Refatorado forma de abrir modal
 - [x] Pegar todos os dados do pokemon na API
 - [x] Renderizar pokemon clicado de for dinamica
-- [ ] Ajustar layout para ficar o mais próximo possível de proposto
+- [x] Ajustar layout para ficar o mais próximo possível de proposto
 
 
 ### Funcionalidades extras

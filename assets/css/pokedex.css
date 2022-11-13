@@ -1,3 +1,7 @@
+.content h1 {
+  padding: 0 1rem;
+}
+
 ol.pokemon-list { 
   display: grid;
   grid-template-columns: 1fr;
@@ -82,6 +86,12 @@ ol.pokemon-list {
   padding: 1rem;
   color: #FFF;
   border-radius: 1rem;
+  transition: 500ms linear; 
+}
+
+.pokemon:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(10px 10px 30px rgba(0, 0, 0, 0.36)) brightness(1.1);
 }
 
 .pokemon .number {
@@ -136,6 +146,12 @@ li.type {
   border: none;
   border-radius: 1rem;
   cursor: pointer;
+  transition: 500ms linear;
+}
+
+.pagination button:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(10px 10px 30px rgba(0, 0, 0, 0.36)) brightness(1.1);
 }
 
 @media screen and (min-width: 374.9px) {
@@ -147,6 +163,12 @@ li.type {
 @media screen and (min-width: 575.9px) {
   ol.pokemon-list { 
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .pagination button {
+    font-size: .875rem;
+    width: 110px;
+    height: 30px
   }
 }
 
