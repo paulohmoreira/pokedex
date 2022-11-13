@@ -65,7 +65,7 @@ function convertPokemonHeaderToModal(pokemon) {
     <ol class="types">
       ${pokemon.types.map((type) => `<li class="type ${pokemon.type}">${type}</li>`).join("")}
     </ol>
-    <img src="${pokemon.photo}" alt="${pokemon.name}r">
+    <img src="${pokemon.photo}" alt="${pokemon.name}">
   </div>
   `
 }

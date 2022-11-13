@@ -1,11 +1,5 @@
 const pokeApi = {}
 
-// Requisição detalhes dos pokemons
-pokeApi.getPokemonDetail = (pokemon) => {
-  return fetch(pokemon.url)
-    .then((response) => response.json()) // acessando o pokemon, convertendo lista e retornando os detalhes em JSON
-    .then(convertPokeApiToPokemon)
-}
 
 // Requisição lista de pokemons
 pokeApi.getPokemons = (offset = 0, limit = 9) => {
@@ -20,6 +14,13 @@ pokeApi.getPokemons = (offset = 0, limit = 9) => {
     .then((detailRequests) => Promise.all(detailRequests)) // Esperando que todas as requisições terminem
     .then((pokemonsDetails) => pokemonsDetails) // Retornando a lista completa com detalhes dos pokemons
     .catch((error) => console.error(error))
+}
+
+// Requisição detalhes dos pokemons
+pokeApi.getPokemonDetail = (pokemon) => {
+  return fetch(pokemon.url)
+    .then((response) => response.json()) // acessando o pokemon, convertendo lista e retornando os detalhes em JSON
+    .then(convertPokeApiToPokemon)
 }
 
 // Requisição para pokemon clicado
