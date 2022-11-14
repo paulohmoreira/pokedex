@@ -4,6 +4,12 @@
 
 # Pokedex
 
+<h1 align="center">
+  <br>
+  <img src="/demo.gif" alt="Demo">
+  <br>
+</h1>
+
 Objetivo deste projeto é criar uma Pokedex totalmente responsiva, com paginação, filtro por tipo de pokemon, conectada à [Poke API](https://pokeapi.co/), manipulando múltiplas requisições em paralelo e com boas práticas para reduzir a verbosidade do código, consolidando meus estudos com API's RESTful
 
 ## Deploy
