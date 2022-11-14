@@ -6,7 +6,7 @@
 
 <h1 align="center">
   <br>
-  <img src="/demo.gif" alt="Demo">
+  <img src="./assets/images/demo.gif" alt="Demo">
   <br>
 </h1>
 
