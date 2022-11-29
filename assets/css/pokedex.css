@@ -7,6 +7,10 @@ ol.pokemon-list {
   grid-template-columns: 1fr;
 }
 
+.white {
+  background-color: #FFF;
+}
+
 .normal {
   background-color: #a6a877;
 }

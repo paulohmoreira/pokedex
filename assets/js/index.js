@@ -19,23 +19,25 @@ function loadPokemonItens(offset, limit) {
 }
 
 // Função para chamar a requisição do pokemon clicado
+const modalPokemon = document.getElementById("modal-pokemon");
+const pokemonHeader = document.getElementById("topo");
+const pokemonAbout = document.getElementById("data-container");
+const pokemonStats = document.getElementById("stats-container");
 function loadPokemonClicked(id) {
-  const modalPokemon = document.getElementById("modal-pokemon");
-  const pokemonHeader = document.getElementById("topo");
-  const pokemonAbout = document.getElementById("data-container");
-  const pokemonStats = document.getElementById("stats-container");
   // Pegando detalhes do pokemon
   pokeApi.getPokemonClicked(id).then((pokemons = []) => {
     // Convertendo para o header para html
     const newHeader = convertPokemonHeaderToModal(pokemons);
     const newAbout = convertPokemonAboutToModal(pokemons);
     const newStats = convertPokemonStatsToModal(pokemons);
-    pokemonHeader.innerHTML = newHeader;
-    pokemonAbout.innerHTML = newAbout;
-    pokemonStats.innerHTML = newStats;
-    modalPokemon.className = "";
-    modalPokemon.classList.add("modal-pokemon");
-    modalPokemon.classList.add(pokemons.type);
+    setTimeout(function(){
+      pokemonHeader.innerHTML = newHeader;
+      pokemonAbout.innerHTML = newAbout;
+      pokemonStats.innerHTML = newStats;
+      modalPokemon.className = "";
+      modalPokemon.classList.add("modal-pokemon");
+      modalPokemon.classList.add(pokemons.type);
+    }, 1000);
   })
   .catch((error) => console.error(error))
 }
@@ -173,7 +175,25 @@ function closeModal() {
   btn.addEventListener("click", () => { 
     modal.classList.remove("show-modal");
     fade.style.display = "none";
+    clearModal();
   })
+}
+
+function clearModal() {
+  pokemonHeader.innerHTML = `
+  <div class="loading">
+    <img src="assets/images/loading.gif" alt="Loading">
+  </div>
+  `;
+  pokemonAbout.innerHTML = `
+    <div>Loading...</div>
+  `;
+  pokemonStats.innerHTML = `
+    <div>Loading...</div>
+  `;
+  modalPokemon.className = "";
+  modalPokemon.classList.add("modal-pokemon");
+  modalPokemon.classList.add("white");
 }
 
 // Função para abrir aba clicada do menu
